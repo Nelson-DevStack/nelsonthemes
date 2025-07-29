@@ -1,0 +1,17 @@
+Package: nelsonthemes
+Type: Package
+Title: Good and pretty production ready ggplot themes
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Nelson", "Carvalho",
+      email = "nelsoncarvalho.negocios@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: This package brings production ready ggplot themes, made to speed up your workflow.
+    You can make your plots pretty using the provided themes.
+License: `use_mit_license()`
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
