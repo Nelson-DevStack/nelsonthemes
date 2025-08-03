@@ -1,0 +1,44 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# nelsonthemes <img src="man/figures/logo.png" alt="Logo do nelsonthemes" align="right" height="139"/>
+
+<!-- badges: start -->
+
+<!-- badges: end -->
+
+The goal of nelsonthemes is to provide production-ready plot themes
+
+## Installation
+
+You can install the of nelsonthemes from
+[GitHub](https://github.com/Nelson-DevStack/nelsonthemes) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Nelson-DevStack/nelsonthemes)
+```
+
+## Usage
+
+Basic example which shows you how to use the provided theme,
+`theme_neo_x` from nelsonthemes.
+
+``` r
+library(nelsonthemes)
+library(ggplot2)
+
+# Scatter plot of Sepal.Length x Sepal.Width from Iris
+ggplot(iris, aes(x = Sepal.Length, Sepal.Width)) +
+  geom_point() +
+  labs(
+    title = "Iris - Sepal Length x Sepal Width",
+    xlab = "Sepal Length",
+    ylab = "Sepal Width",
+    subtitle = "Fischer's Iris data set",
+    caption = "(1936)"
+  ) +
+  theme_neo_x()
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />

@@ -1,3 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^start.sh$
+^Dockerfile.sh$
+^README\.Rmd$
+^package_workflow.R$
