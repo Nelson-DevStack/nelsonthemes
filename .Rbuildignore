@@ -5,3 +5,4 @@
 ^Dockerfile.sh$
 ^README\.Rmd$
 ^package_workflow.R$
+^testing_area.R$

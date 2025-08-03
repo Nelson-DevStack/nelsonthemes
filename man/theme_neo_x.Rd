@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_neo_x.R
 \name{theme_neo_x}
 \alias{theme_neo_x}
-\title{theme_neo_x - A simple but pretty production ready ggplot theme}
+\title{theme_neo_x: A simple but pretty production ready ggplot theme (x-axis)}
 \usage{
 theme_neo_x()
 }
@@ -10,7 +10,7 @@ theme_neo_x()
 A ggplot theme object
 }
 \description{
-theme_neo_x - A simple but pretty production ready ggplot theme
+A recommended for time series simple but pretty production ready ggplot theme
 }
 \examples{
 require(ggplot2)

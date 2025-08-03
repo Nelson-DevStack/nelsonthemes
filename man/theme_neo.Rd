@@ -2,9 +2,12 @@
 % Please edit documentation in R/theme_neo.R
 \name{theme_neo}
 \alias{theme_neo}
-\title{A simple but pretty ggplot theme}
+\title{theme_neo: A extensible simple but pretty production-ready ggplot theme}
 \usage{
-theme_neo()
+theme_neo(grid = 2)
+}
+\arguments{
+\item{layout}{x lines design integer. It can be 3 to display both major and minor x lines, 2 to display only major line, 1 to display only minor line and 0 to display none.}
 }
 \value{
 A ggplot theme object

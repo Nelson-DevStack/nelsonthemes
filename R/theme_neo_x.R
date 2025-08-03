@@ -1,4 +1,6 @@
-#' theme_neo_x - A simple but pretty production ready ggplot theme
+#' theme_neo_x: A simple but pretty production ready ggplot theme (x-axis)
+#'
+#' A recommended for time series simple but pretty production ready ggplot theme
 #'
 #' @returns A ggplot theme object
 #' @export
