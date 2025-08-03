@@ -2,7 +2,7 @@
 #'
 #' A simple but pretty ggplot theme
 #'
-#' @param layout x lines design integer. It can be 3 to display both major and minor x lines, 2 to display only major line, 1 to display only minor line and 0 to display none.
+#' @param layout x lines design integer. It can be 4 to display both major and minor grids from x and y, 3 to display both major and minor x lines, 2 to display only major line, 1 to display only minor line and 0 to display none.
 #'
 #' @returns A ggplot theme object
 #' @export
@@ -25,10 +25,26 @@
 #'   ) +
 #'   theme_neo()
 theme_neo <- function(layout = 2) {
-  if(layout < 0 | layout > 3) {
+  if(layout < 0 | layout > 4) {
     layout = 3
   }
-  if(layout == 3) {
+  if(layout == 4) {
+    theme_minimal() +
+      theme(
+        axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
+        axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
+        axis.title = element_text(face = "bold") ,
+        plot.title = element_text(face = "bold"),
+        plot.subtitle = element_text(margin = margin(0, 0,16, 0)),
+        axis.line.y = element_line(color = "#313131"),
+        axis.line.x = element_line(color = "#313131"),
+        axis.ticks = element_line(color = "#313131"),
+        panel.grid.major.y = element_line(color = "#d4d4d4"),
+        panel.grid.minor.y = element_line(color = "#d4d4d4"),
+        panel.grid.minor.x = element_line(color = "#d4d4d4"),
+        panel.grid.major.x = element_line(color = "#d4d4d4"),
+      )
+  } else if(layout == 3) {
    theme_minimal() +
     theme(
       axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),

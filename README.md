@@ -40,7 +40,7 @@ ggplot(iris, aes(x = Sepal.Length, Sepal.Width)) +
     subtitle = "Fischer's Iris data set",
     caption = "(1936)"
   ) +
-  theme_neo(layout = 3)
+  theme_neo(layout = 4)
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />

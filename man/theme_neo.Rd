@@ -4,10 +4,10 @@
 \alias{theme_neo}
 \title{theme_neo: A extensible simple but pretty production-ready ggplot theme}
 \usage{
-theme_neo(grid = 2)
+theme_neo(layout = 2)
 }
 \arguments{
-\item{layout}{x lines design integer. It can be 3 to display both major and minor x lines, 2 to display only major line, 1 to display only minor line and 0 to display none.}
+\item{layout}{x lines design integer. It can be 4 to display both major and minor grids from x and y, 3 to display both major and minor x lines, 2 to display only major line, 1 to display only minor line and 0 to display none.}
 }
 \value{
 A ggplot theme object
