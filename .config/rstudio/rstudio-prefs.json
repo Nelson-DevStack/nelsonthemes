@@ -1,0 +1,7 @@
+{
+    "initial_working_directory": "/home/rstudio/nelsonthemes",
+    "soft_wrap_r_files": true,
+    "editor_keybindings": "vim",
+    "posix_terminal_shell": "bash",
+    "show_hidden_files": true
+}

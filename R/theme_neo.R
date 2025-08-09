@@ -24,6 +24,8 @@
 #'     subtitle = "Gear count"
 #'   ) +
 #'   theme_neo()
+#inksave_color <- "#231f20"
+inksave_color <- "#212121"
 theme_neo <- function(layout = 2) {
   if(layout < 0 | layout > 4) {
     layout = 3
@@ -31,14 +33,14 @@ theme_neo <- function(layout = 2) {
   if(layout == 4) {
     theme_minimal() +
       theme(
-        axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-        axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-        axis.title = element_text(face = "bold") ,
-        plot.title = element_text(face = "bold"),
-        plot.subtitle = element_text(margin = margin(0, 0,16, 0)),
-        axis.line.y = element_line(color = "#313131"),
-        axis.line.x = element_line(color = "#313131"),
-        axis.ticks = element_line(color = "#313131"),
+        axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+        axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+        axis.title = element_text(face = "bold", color = inksave_color) ,
+        plot.title = element_text(face = "bold", color = inksave_color),
+        plot.subtitle = element_text(margin = margin(0, 0,16, 0), color = inksave_color),
+        axis.line.y = element_line(color = inksave_color),
+        axis.line.x = element_line(color = inksave_color),
+        axis.ticks = element_line(color = inksave_color),
         panel.grid.major.y = element_line(color = "#d4d4d4"),
         panel.grid.minor.y = element_line(color = "#d4d4d4"),
         panel.grid.minor.x = element_line(color = "#d4d4d4"),
@@ -47,14 +49,14 @@ theme_neo <- function(layout = 2) {
   } else if(layout == 3) {
    theme_minimal() +
     theme(
-      axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-      axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-      axis.title = element_text(face = "bold") ,
-      plot.title = element_text(face = "bold"),
-      plot.subtitle = element_text(margin = margin(0, 0,16, 0)),
-      axis.line.y = element_line(color = "#313131"),
-      axis.line.x = element_line(color = "#313131"),
-      axis.ticks = element_line(color = "#313131"),
+      axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+      axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+      axis.title = element_text(face = "bold", color = inksave_color) ,
+      plot.title = element_text(face = "bold", color = inksave_color),
+      plot.subtitle = element_text(margin = margin(0, 0,16, 0), color = inksave_color),
+      axis.line.y = element_line(color = inksave_color),
+      axis.line.x = element_line(color = inksave_color),
+      axis.ticks = element_line(color = inksave_color),
       panel.grid.major.y = element_line(color = "#d4d4d4"),
       panel.grid.minor.y = element_line(color = "#d4d4d4"),
       panel.grid.minor.x = element_blank(),
@@ -63,14 +65,14 @@ theme_neo <- function(layout = 2) {
   } else if(layout == 2) {
     theme_minimal() +
       theme(
-        axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-        axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-        axis.title = element_text(face = "bold") ,
-        plot.title = element_text(face = "bold"),
-        plot.subtitle = element_text(margin = margin(0, 0,16, 0)),
-        axis.line.y = element_line(color = "#313131"),
-        axis.line.x = element_line(color = "#313131"),
-        axis.ticks = element_line(color = "#313131"),
+        axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+        axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+        axis.title = element_text(face = "bold", color = inksave_color) ,
+        plot.title = element_text(face = "bold", color = inksave_color),
+        plot.subtitle = element_text(margin = margin(0, 0,16, 0), color = inksave_color),
+        axis.line.y = element_line(color = inksave_color),
+        axis.line.x = element_line(color = inksave_color),
+        axis.ticks = element_line(color = inksave_color),
         panel.grid.major.y = element_line(color = "#d4d4d4"),
         panel.grid.minor.y = element_blank(),
         panel.grid.minor.x = element_blank(),
@@ -80,14 +82,14 @@ theme_neo <- function(layout = 2) {
   else if(layout == 1) {
     theme_minimal() +
       theme(
-        axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-        axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-        axis.title = element_text(face = "bold") ,
-        plot.title = element_text(face = "bold"),
-        plot.subtitle = element_text(margin = margin(0, 0,16, 0)),
-        axis.line.y = element_line(color = "#313131"),
-        axis.line.x = element_line(color = "#313131"),
-        axis.ticks = element_line(color = "#313131"),
+        axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+        axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+        axis.title = element_text(face = "bold", color = inksave_color) ,
+        plot.title = element_text(face = "bold", color = inksave_color),
+        plot.subtitle = element_text(margin = margin(0, 0,16, 0), color = inksave_color),
+        axis.line.y = element_line(color = inksave_color),
+        axis.line.x = element_line(color = inksave_color),
+        axis.ticks = element_line(color = inksave_color),
         panel.grid.major.y = element_blank(),
         panel.grid.minor.y = element_line(color = "#d4d4d4"),
         panel.grid.minor.x = element_blank(),
@@ -96,14 +98,14 @@ theme_neo <- function(layout = 2) {
   } else if(layout == 0) {
     theme_minimal() +
     theme(
-      axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-      axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-      axis.title = element_text(face = "bold") ,
-      plot.title = element_text(face = "bold"),
-      plot.subtitle = element_text(margin = margin(0, 0,16, 0)),
-      axis.line.y = element_line(color = "#313131"),
-      axis.line.x = element_line(color = "#313131"),
-      axis.ticks = element_line(color = "#313131"),
+      axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+      axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+      axis.title = element_text(face = "bold", color = inksave_color) ,
+      plot.title = element_text(face = "bold", color = inksave_color),
+      plot.subtitle = element_text(margin = margin(0, 0,16, 0), color = inksave_color),
+      axis.line.y = element_line(color = inksave_color),
+      axis.line.x = element_line(color = inksave_color),
+      axis.ticks = element_line(color = inksave_color),
       panel.grid.major.y = element_blank(),
       panel.grid.minor.y = element_blank(),
       panel.grid.minor.x = element_blank(),

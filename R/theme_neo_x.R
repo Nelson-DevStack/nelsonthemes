@@ -22,17 +22,18 @@
 #'     subtitle = "Gear count"
 #'   ) +
 #'   theme_neo_x()
+inksave_color <- "#212121"
 theme_neo_x <- function() {
   theme_minimal() +
   theme(
-    axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-    axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = "#313131"),
-    axis.title = element_text(face = "bold") ,
-    plot.title = element_text(face = "bold"),
-    plot.subtitle = element_text(margin = margin(0, 0,16, 0)),
+    axis.text.y = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+    axis.text.x = element_text(margin = margin(16, 16, 16, 16), color = inksave_color),
+    axis.title = element_text(face = "bold", color = inksave_color) ,
+    plot.title = element_text(face = "bold", color = inksave_color),
+    plot.subtitle = element_text(margin = margin(0, 0,16, 0), color = inksave_color),
     axis.line.y = element_blank(),
-    axis.line.x = element_line(color = "#313131"),
-    axis.ticks.x = element_line(color = "#313131"),
+    axis.line.x = element_line(color = inksave_color),
+    axis.ticks.x = element_line(color = inksave_color),
     axis.ticks.y = element_blank(),
     panel.grid.minor.y = element_blank(),
     panel.grid.major.x = element_blank(),

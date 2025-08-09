@@ -67,3 +67,32 @@ document()
 # 2 - Major
 # 1 - Minor
 # 0 - None
+
+
+# Testing ink saver color (#313131)
+ggplot(iris, aes(x = Sepal.Length)) +
+  geom_bar(stat = "count") +
+  theme_neo(layout = 3) +
+  labs(
+    title = "Histogram Iris",
+    subtitle = "Sepal Length",
+    x = "Sepal Length",
+    y = "Count"
+  ) +
+  neo_down()
+
+# Converting nhtemp time series object to data frame
+nhtemp <- data.frame(nhtemp = nhtemp, year = 1912:1971)
+
+# Time Series/Line chart
+ggplot(nhtemp, aes(y = nhtemp, x = year)) +
+  geom_line() +
+  theme_neo_x() +
+  neo_down() +
+  labs(
+    title = "Average Yearly Temperatures in New Haven",
+    subtitle = "New Haven, Connecticut (1912-1971)",
+    x = "Year",
+    y = "Temperature"
+  )
+
