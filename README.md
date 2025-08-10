@@ -45,10 +45,52 @@ ggplot(iris, aes(x = Sepal.Length, Sepal.Width)) +
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
+### Barplot
+
+``` r
+require(ggplot2)
+ggplot(mtcars, aes(x=  factor(gear))) +
+geom_bar() +
+  geom_text(
+    stat="count",
+    aes(label = after_stat(count)),
+    vjust = -0.3
+  ) +
+  labs(
+    title = "mtcars",
+    subtitle = "Gear count"
+  ) +
+  theme_neo()
+```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+
+Applying the `neo_down` function to attach the data to the x line
+(bottom/down) and `layout = 4`:
+
+``` r
+require(ggplot2)
+ggplot(mtcars, aes(x=  factor(gear))) +
+geom_bar() +
+  geom_text(
+    stat="count",
+    aes(label = after_stat(count)),
+    vjust = -0.5
+  ) +
+  labs(
+    title = "mtcars",
+    subtitle = "Gear count",
+    caption = "'neo_down' applied"
+  ) +
+  theme_neo(layout = 3) +
+  neo_down()
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+
 ### Time Series/Line chart
 
-Using the `neo_down` function to attach the data to the x line
-(bottom/down) and the recommended theme for time series: `theme_neo_x`
+Recommended theme for time series: `theme_neo_x`
 
 ``` r
 library(nelsonthemes)
@@ -61,13 +103,14 @@ nhtemp <- data.frame(nhtemp = nhtemp, year = 1912:1971)
 ggplot(nhtemp, aes(y = nhtemp, x = year)) +
   geom_line() +
   theme_neo_x() +
-  neo_down() +
   labs(
     title = "Average Yearly Temperatures in New Haven",
     subtitle = "New Haven, Connecticut (1912-1971)",
     x = "Year",
     y = "Temperature"
   )
+#> Don't know how to automatically pick scale for object of type <ts>. Defaulting
+#> to continuous.
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />

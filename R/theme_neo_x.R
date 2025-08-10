@@ -6,22 +6,22 @@
 #' @export
 #'
 #' @examples
-#' require(ggplot2)
-#' ggplot(mtcars, aes(x=  factor(gear))) +
-#' geom_bar() +
-#'   scale_y_continuous(
-#'     expand = expansion(c(0, 0.5))
-#'   ) +
-#'   geom_text(
-#'     stat="count",
-#'     aes(label = after_stat(count)),
-#'     vjust = -0.5
-#'   ) +
+#' library(nelsonthemes)
+#' library(ggplot2)
+#'
+#' # Converting nhtemp time series object to data frame
+#' nhtemp <- data.frame(nhtemp = nhtemp, year = 1912:1971)
+#'
+#' # Time Series/Line chart
+#' ggplot(nhtemp, aes(y = nhtemp, x = year)) +
+#'   geom_line() +
+#'   theme_neo_x() +
 #'   labs(
-#'     title = "mtcars",
-#'     subtitle = "Gear count"
-#'   ) +
-#'   theme_neo_x()
+#'     title = "Average Yearly Temperatures in New Haven",
+#'     subtitle = "New Haven, Connecticut (1912-1971)",
+#'     x = "Year",
+#'     y = "Temperature"
+#'   )
 inksave_color <- "#212121"
 theme_neo_x <- function() {
   theme_minimal() +

@@ -10,10 +10,7 @@
 #' @examples
 #' require(ggplot2)
 #' ggplot(mtcars, aes(x=  factor(gear))) +
-#' geom_bar() +
-#'   scale_y_continuous(
-#'     expand = expansion(c(0, 0.5))
-#'   ) +
+#'   geom_bar() +
 #'   geom_text(
 #'     stat="count",
 #'     aes(label = after_stat(count)),
@@ -24,7 +21,20 @@
 #'     subtitle = "Gear count"
 #'   ) +
 #'   theme_neo()
-#inksave_color <- "#231f20"
+#'
+#' # Using layout = 4
+#' ggplot(mtcars, aes(x=  factor(gear))) +
+#'   geom_bar() +
+#'   geom_text(
+#'     stat="count",
+#'     aes(label = after_stat(count)),
+#'     vjust = -0.5
+#'   ) +
+#'   labs(
+#'     title = "mtcars",
+#'     subtitle = "Gear count"
+#'   ) +
+#'   theme_neo(layout = 4)
 inksave_color <- "#212121"
 theme_neo <- function(layout = 2) {
   if(layout < 0 | layout > 4) {
@@ -112,5 +122,4 @@ theme_neo <- function(layout = 2) {
       panel.grid.major.x = element_blank(),
     )
   }
-
 }
